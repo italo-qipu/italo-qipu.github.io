@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'qipu';
-    src:    url('fonts/qipu.eot?pm3zyg');
-    src:    url('fonts/qipu.eot?pm3zyg#iefix') format('embedded-opentype'),
-        url('fonts/qipu.ttf?pm3zyg') format('truetype'),
-        url('fonts/qipu.woff?pm3zyg') format('woff'),
-        url('fonts/qipu.svg?pm3zyg#qipu') format('svg');
+    src:    url('fonts/qipu.eot?6bfvtz');
+    src:    url('fonts/qipu.eot?6bfvtz#iefix') format('embedded-opentype'),
+        url('fonts/qipu.ttf?6bfvtz') format('truetype'),
+        url('fonts/qipu.woff?6bfvtz') format('woff'),
+        url('fonts/qipu.svg?6bfvtz#qipu') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,27 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-trophy:before {
+    content: "\e953";
+}
+.icon-benefits-pregnant:before {
+    content: "\e954";
+}
+.icon-benefits-disease:before {
+    content: "\e955";
+}
+.icon-benefits-deficient:before {
+    content: "\e956";
+}
+.icon-benefits-reclusion:before {
+    content: "\e957";
+}
+.icon-benefits-death:before {
+    content: "\e958";
+}
+.icon-benefits-age:before {
+    content: "\e959";
+}
 .icon-lion:before {
     content: "\1f5b7";
 }
@@ -80,6 +101,9 @@
 }
 .icon-inbox-out:before {
     content: "\e636";
+}
+.icon-menu-plus:before {
+    content: "\e95a";
 }
 .icon-magnifi-glass:before {
     content: "\e633";
@@ -155,6 +179,18 @@
 }
 .icon-saldo:before {
     content: "\e94a";
+}
+.icon-cheque:before {
+    content: "\e94e";
+}
+.icon-cheque-deposit:before {
+    content: "\e94f";
+}
+.icon-cheque-sacado:before {
+    content: "\e950";
+}
+.icon-bank-slip:before {
+    content: "\e951";
 }
 .icon-saldo-caixa:before {
     content: "\e949";
@@ -278,6 +314,9 @@
 }
 .icon-google-play:before {
     content: "\e611";
+}
+.icon-google-plus:before {
+    content: "\e952";
 }
 .icon-apple-store:before {
     content: "\e610";
