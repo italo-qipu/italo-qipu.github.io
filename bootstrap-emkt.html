@@ -27,12 +27,21 @@
             <h1>Qipu</h1>
         </div>
 
-        <ul id="navigation">
-            <li><a href="#color"><i class="fa fa-paint-brush" aria-hidden="true"></i><div class="text-nav">Paleta de Cores</div></a></li>
+        <ul id="navigation-emkt">
+            <li><a href="#frame"><i class="fa fa-cubes" aria-hidden="true"></i><div class="text-nav">Bootstrap Emkt</div></a></li>
+            <li><a href="#base"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Base</div></a></li>
+            <li><a href="#disclaimer-header"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Disclaimer Header</div></a></li>
+            <li><a href="#disclaimer-footer"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Disclaimer Footer</div></a></li>
+            <li><a href="#logo"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Logo</div></a></li>
+            <li><a href="#social-footer"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Social Footer</div></a></li>
+            <li><a href="#banner"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Banner</div></a></li>
+            <li><a href="#button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="text-nav">Button</div></a></li>
         </ul>
     </header>
 
     <nav class="button-share-container">
+
+        <a href="design_thinking/index.html" class="buttons" tooltip="Design Thinking"><i class="fa fa-book"></i></a>
 
         <a href="index.html" class="buttons" tooltip="UI Guideline"><i class="fa fa-umbrella"></i></a>
 
@@ -94,32 +103,224 @@ S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715
         <!-- //Section End -->
 
         <!-- Section Start -->
-        <section id="fonts">
+        <section id="frame">
             <h2>Bootstrap Emkt</h2>
 
             <hr/>
+
+            <p class="max-width">Para construir um email marketing usamos o framework ZURB <a href="http://foundation.zurb.com/emails.html" target="_blank">http://foundation.zurb.com/emails.html</a></p>
+            <img class="zurb" src="assets/img/template-graphic.svg" alt="Zurb">
+            <p>Algumas vantagens pela qual foi adotado:</p>
+            <ul>
+                <li>Grade sensível para qualquer layout</li>
+                <li>Padrões de interface do usuário comum para construir mais rápido</li>
+                <li>Construção de mails elegantes e rápidos com Sass</li>
+            </ul>
+            <p>Para construção de e-mails Inliner use esse link: <a href="http://foundation.zurb.com/emails/inliner-v2.html" target="_blank">http://foundation.zurb.com/emails/inliner-v2.html</a></p>
 
         </section>
         <!-- //Section End -->
 
         <!-- Section Start -->
-        <section id="icon">
-            <h2>Icones</h2>
+        <section id="base">
+            <h2>Base</h2>
 
             <hr/>
 
-            <p class="max-width">Acesse o link para administrar as fontes: <a href="https://icomoon.io/app/#/projects" target="_blank">https://icomoon.io/app/#/projects</a></p>
+            <p class="max-width">Essa é a estrutura para iniciar a contrução do email marketing, baixe o HTML para iniciar:</p>
 
-            <pre class="prettyprint">
-/resourses/fonts/selection.json
-            </pre>
-            <br/>
-            <p class="max-width"><strong>Adicionar icones</strong></p>
-            <p class="max-width">Clique no icones de hamburguer e selecione "Import to set" Após as modificações fazer donwload da font colocar a font na pasta <strong>/resourses/fonts/</strong>. As fontes serão compiladas automaticamente no processo de build - <strong>GULP FONTS</strong>.</p>
+            <p><a href="assets/download/base-emkt.html.zip" target="_blank" class="button">Base em HTML</a></p>
+        </section>
+        <!-- //Section End -->
 
-            <p>Icons Qipu. Última Atualização: 15/06/2016</p>
+        <!-- Section Start -->
+        <section id="disclaimer-header">
+            <h2>Disclaimer Header</h2>
 
-            <p><a href="assets/fonts/qipu/demo.html" target="_blank" class="button">Icons Qipu</a></p>
+            <hr/>
+
+            <p><img src="assets/img/emkt/disclaimer-header.png" alt="Disclaimer Header"></p>
+
+            <textarea readonly="">
+                <table class="disclaimer container">
+                    <tr>
+                        <td valign="top">
+                            <table>
+                                <tr>
+                                    <td class="padding-disc font-small">
+                                        Caso não consiga visualizar este email, <a href="#" alt="Acesse este link" title="Acesse este link">acesse este link.</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </textarea>
+        </section>
+        <!-- //Section End -->
+
+        <!-- Section Start -->
+        <section id="disclaimer-footer">
+            <h2>Disclaimer Footer</h2>
+
+            <hr/>
+
+            <p><img src="assets/img/emkt/disclaimer-footer.png" alt="Disclaimer Footer"></p>
+
+            <textarea readonly="">
+                <table class="disclaimer container">
+                    <tr>
+                        <td valign="top">
+                            <table>
+                                <tr>
+                                    <td class="padding-disc font-small text-center">
+                                        Por favor, não responda este e-mail. Em caso de dúvidas, entre em contato conosco através da nossa <a href="https://app.qipu.com.br/#/app/about/contact" target="_blank" alt="Central de Atendimento" title="Central de Atendimento">Central de Atendimento.</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </textarea>
+        </section>
+        <!-- //Section End -->
+
+        <!-- Section Start -->
+        <section id="logo">
+            <h2>Logo</h2>
+
+            <hr/>
+            <p><img src="assets/img/emkt/logo.png" alt="Logo"></p>
+
+            <textarea readonly="">
+                <table class="row">
+                    <tbody>
+                        <tr>
+                            <th class="small-12 large-12">
+                                <center class="header">
+                                    <a href="http://www.qipu.com.br/" target="_blank" alt="Qipu" style="text-decoration:none">
+                                        <img src="http://mkt.qipu.com.br/emails/base_2016/cluster/qipu-header.png" alt="Qipu" /></a>
+                                </center>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
+        </section>
+        <!-- //Section End -->
+
+        <!-- Section Start -->
+        <section id="social-footer">
+            <h2>Social Footer</h2>
+
+            <hr/>
+            <p><img src="assets/img/emkt/social-footer.png" alt="Social Footer"></p>
+
+            <textarea readonly="">
+                <hr>
+                <table class="row">
+                    <tbody>
+                        <tr>
+                            <th class="padding-sebrae small-12 large-12 columns first last">
+                                <center data-parsed=""><img src="http://mkt.qipu.com.br/emails/base_2016/cluster/qipu-sebrae.png" alt="Qipu e Sebrae" align="center"> </center>
+                                <br>
+                                <p class="text-center">O aplicativo gratuito do MEI &#8226; <a title="Acesse o site do Qipu" href="http://www.qipu.com.br" target="_blank">www.qipu.com.br</a></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="social-footer">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <th class="social menu-item float-center">
+                                                        <a href="http://www.qipu.com.br/blog/" target="_blank" alt="Blog" style="text-decoration:none"><img src="http://mkt.qipu.com.br/emails/base_2016/cluster/blog.png" alt="Blog" title="Blog"></a>
+                                                    </th>
+                                                    <th class="social menu-item float-center">
+                                                        <a href="https://www.facebook.com/qipubr" target="_blank" alt="Facebook" style="text-decoration:none"><img src="http://mkt.qipu.com.br/emails/base_2016/cluster/face.png" alt="Facebook" title="Facebook"></a>
+                                                    </th>
+                                                    <th class="social menu-item float-center">
+                                                        <a href="https://twitter.com/qipubrasil" target="_blank" alt="Twitter" style="text-decoration:none"><img src="http://mkt.qipu.com.br/emails/base_2016/cluster/twitter.png" alt="Twitter" title="Twitter"></a>
+                                                    </th>
+                                                    <th class="menu-item float-center">
+                                                        <a href="https://www.youtube.com/channel/UCnjyJBmAkKTVGNPOQZftwlQ" target="_blank" alt="You Tube" style="text-decoration:none"><img src="http://mkt.qipu.com.br/emails/base_2016/cluster/youtube.png" alt="You Tube" title="You Tube"></a>
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
+        </section>
+        <!-- //Section End -->
+
+        <!-- Section Start -->
+        <section id="banner">
+            <h2>Banner</h2>
+
+            <hr/>
+            <p><img src="assets/img/emkt/banner.png" alt="Banner"></p>
+
+            <textarea readonly="">
+                <table class="row">
+                    <tbody>
+                        <tr>
+                            <th class="small-12 large-12 columns first last">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <center>
+                                                <a href="https://app.qipu.com.br/#/app/das/list" target="_blank" alt="Seja bem-vindo a família Qipu" style="text-decoration:none"><img src="http://mkt.qipu.com.br/emails/base_2016/cluster/banner.png" align="center" class="text-center" alt="Seja bem-vindo a família Qipu" title="Seja bem-vindo a família Qipu"></a>
+                                            </center>
+                                        </th>
+                                        <th class="expander"></th>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
+        </section>
+        <!-- //Section End -->
+
+        <!-- Section Start -->
+        <section id="button">
+            <h2>Button</h2>
+
+            <hr/>
+            <p><img src="assets/img/emkt/button.png" alt="Button"></p>
+
+            <textarea readonly="">
+                <table class="row">
+                    <tbody>
+                        <tr>
+                            <th class="text-content small-12 large-8 columns first">
+                                <center>
+                                    <table class="button large">
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <center><a href="https://app.qipu.com.br/#/app/das/list" target="_blank" alt="Vamos lá!" align="center" class="text-center">VAMOS LÁ!</a></center>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
         </section>
         <!-- //Section End -->
 
@@ -134,7 +335,7 @@ S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715
 
     <script type="text/javascript">
         // Onepage Nav Elements
-        $('#navigation').singlePageNav({
+        $('#navigation-emkt').singlePageNav({
             offset: 0,
             filter: ':not(.nav-external)',
             updateHash: true,
