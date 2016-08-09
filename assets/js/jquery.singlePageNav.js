@@ -187,3 +187,48 @@ if (typeof Object.create !== 'function') {
     };
     
 })(jQuery, window, document);
+
+//COPY
+function copyFull() {
+  //copys inner html of target div. 
+
+  //event button
+  var copyBtn = $('.copy-btn');
+  copyBtn.on('click', function(event) {
+
+    var $this = $(this);
+
+    //find the element that has the text you want.
+    var content = $this.prev('.copy-content');
+    //creates new range object and sets text as boundaries.
+    var range = document.createRange();
+    range.selectNode(content[0]);
+    window.getSelection().addRange(range);
+
+    try {
+      // Now that we've selected the text, execute the copy command  
+      var successful = document.execCommand('copy');
+      /*var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copy email command was ' + msg);*/
+
+      //handle success
+      $(this).after('<span class="success"></span>');
+      setTimeout(function() {
+        $('.success').addClass('show');
+        setTimeout(function() {
+          $('.success').fadeOut(function() {
+            $('.success').remove();
+          });
+        }, 1000);
+      }, 0);
+    } catch (err) {
+      //console.log('Oops, unable to copy');
+    }
+    //clear out range for next event.
+    window.getSelection().removeAllRanges();
+
+  });
+}
+$(function() {
+  copyFull();
+});
