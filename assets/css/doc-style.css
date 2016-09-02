@@ -174,6 +174,73 @@ h4 {
     margin-top: 40px;
 }
 
+.copy-btn {
+    float: right;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1em;
+    background: #47B3C1;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.20);
+    margin: 20px;
+    border: none;
+}
+
+.copy-btn:hover {
+    background: #1390a0;
+    box-shadow: none;
+}
+
+.copy-btn:active {
+    border: none;
+}
+
+.copy-btn:focus {
+    outline: none;
+}
+
+.success {
+  /*osition: absolute;*/
+  float: right;
+  font-size: 1em;
+  text-align: center;
+  font-style: normal;
+  margin-top: 25px;
+  color: #47B3C1;
+  text-transform: uppercase;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  font-weight: 600;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  
+}
+.success:before {
+  content: "";
+  width: 20px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+.success:after {
+  content: "✔ COPIADO!";
+  display: inline-block;
+  vertical-align: middle;
+}
+.success.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 0;
+}
+
+
 a.button {
     display: inline-block;
     padding: 10px 25px;
