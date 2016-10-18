@@ -206,40 +206,41 @@ h4 {
 }
 
 .success {
-  /*osition: absolute;*/
-  float: right;
-  font-size: 1em;
-  text-align: center;
-  font-style: normal;
-  margin-top: 25px;
-  color: #47B3C1;
-  text-transform: uppercase;
-  -webkit-transition: all .1s ease;
-  transition: all .1s ease;
-  font-weight: 600;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
-  
-}
-.success:before {
-  content: "";
-  width: 20px;
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-}
-.success:after {
-  content: "✔ COPIADO!";
-  display: inline-block;
-  vertical-align: middle;
-}
-.success.show {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  border-radius: 0;
+    /*osition: absolute;*/
+    float: right;
+    font-size: 1em;
+    text-align: center;
+    font-style: normal;
+    margin-top: 25px;
+    color: #47B3C1;
+    text-transform: uppercase;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    font-weight: 600;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
 }
 
+.success:before {
+    content: "";
+    width: 20px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.success:after {
+    content: "✔ COPIADO!";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.success.show {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border-radius: 0;
+}
 
 a.button {
     display: inline-block;
@@ -333,6 +334,7 @@ textarea {
 #header .logo img {
     width: 150px;
 }
+
 
 /* === NAVIGATION === */
 
@@ -604,6 +606,11 @@ section {
     line-height: 1.4;
     margin-bottom: 50px;
     margin-top: 0;
+}
+
+.img-emkt {
+    width: 100%;
+    max-width: 600px;
 }
 
 .btn {
@@ -1196,4 +1203,23 @@ svg {
         -moz-transform: translateX(-1000px);
         transform: translateX(-1000px);
     }
+}
+
+
+/*Button download*/
+
+.clearfix {
+    overflow: hidden;
+}
+
+.download-doc {
+    width: 50%;
+    min-height: 200px;
+    padding: 5%;
+    text-align: center;
+    float: left;
+}
+
+.download-doc img {
+    width: 100px;
 }
