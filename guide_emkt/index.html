@@ -1,50 +1,127 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>Guia para Email Marketing</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="images/brickwall.png" data-background-repeat="repeat" data-background-size="110px">
+                <div class="no-border">
+                    <img width="400" height="200" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                </div>
+                <h1>Guia para emkt</h1>
+                <p>
+                    <small>
+                        Na montagem do html do email marketing não adianta seguir as melhores práticas de padrões web. A maioria dos clientes de e-mail não aceitam muitos dos atributos do CSS e nem conhecem as novas tags do HTML5. Por isso vamos lembrar de processos para montar o email maketing.</br>
+                        Referências: <a href="http://tableless.com.br/boas-praticas-para-e-mail-marketing/" target="_blank">Tableless</a>, <a href="https://www.campaignmonitor.com/css/" target="_blank">Campaignmonitor</a>, <a href="http://mailchimp.com/resources/email-design-guide/?utm_content=buffer448c2&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer" target="_blank">Mailchimp</a>, <a href="https://templateria.com/blog/templates/por-seu-email-marketing-nao-deve-ter-apenas-imagens/" target="_blank">Templateria</a>.
+                    </small>
+                </p>
+            </section>
+            <section data-background="images/brickwall.png" data-background-repeat="repeat" data-background-size="110px">
+                <h2>PSD Pattern</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p>Para começar você pode baixar o <a href="../assets/download/base_emkt.psd.zip">Layout PSD</a> para montagem do emkt. Ou se for montar do zero, não esqueça que o padrão é de 600px de largura.</p>
+            </section>
+            <section data-background="images/brickwall.png" data-background-repeat="repeat" data-background-size="110px">
+                <h2>Usando o Slice Tool</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p>Sempre use o "Slice Select Tool" para cortar e renomear cada imagem do template montado. Lembrese de dar ZOOM para não sobrar pixel's da imagem.</p>
+            </section>
+            <section data-transition="slide" data-background="#254B99" data-background-transition="zoom">
+                <h2 class="text-white">Salvando as imagens</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p class="text-white">Ao salvar as imagens em "SAVE FOR WEB", lembre-se de deixar em 72 ou 150 DPI e de preferência em JPG 100% maximum para uma melhor qualidade.</p>
+            </section>
+            <section data-transition="slide" data-background="#342A69" data-background-transition="zoom">
+                <h2 class="text-white">Otimizando imagens</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p class="text-white">Use o programa ImageOptim para realizar uma melhor performace para imagens utilizadas no emkt. Após isso suba no servidor S3.</p>
+            </section>
+            <section data-background="images/brickwall.png" data-background-repeat="repeat" data-background-size="110px">
+                <h2>Html do bootstrap</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p>Use os HTML's do bootstrap e lembre-se de ir substituindo os links das imagens e os texto que estão no briefing.</p>
+            </section>
+            <section data-background="images/brickwall.png" data-background-repeat="repeat" data-background-size="110px">
+                <h2>Tags do html</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p>Lembre-se de substituir as tags ALT, TITLE e ALIAS com o nome das imagens e os links também.</p>
+            </section>
+            <section data-background="images/brickwall.png" data-background-repeat="repeat" data-background-size="110px">
+                <h2>Alinhado html</h2>
+                <img width="800" height="400" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                <br>
+                <p>Alinhar o código HTML contribui para uma melhor leitura, use o alinhamento do editor (command+shift+L extensão 'beautiful' para o brakets). </p>
+            </section>
+            <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+                <section style="text-align: left;">
+                    <h1>THE END</h1>
+                    <p>
+                        - <a href="http://slides.com">Try the online editor</a>
+                        <br> - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+                    </p>
+                </section>
+            </section>
+        </div>
+    </div>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                {
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
 				]
-			});
-		</script>
-	</body>
+        });
+    </script>
+</body>
+
 </html>

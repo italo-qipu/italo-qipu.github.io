@@ -4,6 +4,12 @@
  */
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@font-face {
+    font-family: 'pantonbold';
+    src: url('../../lib/font/panton-bold.woff2') format('woff2'), url('../../lib/font/panton-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /**
  * Solarized colors by Ethan Schoonover
  */
@@ -15,18 +21,18 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fdf6e3;
-  background-color: #fdf6e3; }
+  background: #EEEEEE;
+  background-color: #EEEEEE; }
 
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 36px;
   font-weight: normal;
-  color: #657b83; }
+  color: #8899A6; }
 
 ::selection {
   color: #fff;
-  background: #d33682;
+  background: #7D64CE;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -45,7 +51,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #586e75;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "pantonbold", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -54,10 +60,11 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 2.77em;
+  color: #47B3C1;}
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.11em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -67,6 +74,10 @@ body {
 
 .reveal h1 {
   text-shadow: none; }
+
+.text-white {
+    color: #ffffff !important;
+}
 
 /*********************************************
  * OTHER
@@ -209,28 +220,34 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #268bd2;
+  color: #7D64CE;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #78b9e6;
+  color: #342A69;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #1a6091; }
+  background: #342A69; }
 
 /*********************************************
  * IMAGES
  *********************************************/
+.no-border img {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+}
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #657b83;
+  border: 4px solid #D4D9DD;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -244,7 +261,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #268bd2;
+  border-color: #7D64CE;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -252,31 +269,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #268bd2; }
+  border-right-color: #7D64CE; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #268bd2; }
+  border-left-color: #7D64CE; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #268bd2; }
+  border-bottom-color: #7D64CE; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #268bd2; }
+  border-top-color: #7D64CE; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #78b9e6; }
+  border-right-color: #342A69; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #78b9e6; }
+  border-left-color: #342A69; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #78b9e6; }
+  border-bottom-color: #342A69; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #78b9e6; }
+  border-top-color: #342A69; }
 
 /*********************************************
  * PROGRESS BAR
@@ -285,7 +302,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #268bd2;
+  background: #7D64CE;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
